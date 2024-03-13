@@ -1,0 +1,14 @@
+D:\KKTaiib\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.deps.json
+D:\KKTaiib\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.runtimeconfig.json
+D:\KKTaiib\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.dll
+D:\KKTaiib\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.pdb
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.csproj.AssemblyReference.cache
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.AssemblyInfoInputs.cache
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.AssemblyInfo.cs
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.csproj.CoreCompileInputs.cache
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.dll
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\refint\BibliotekaKlasModel.dll
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.pdb
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.genruntimeconfig.cache
+D:\KKTaiib\BibliotekaKlasModel\obj\Debug\net6.0\ref\BibliotekaKlasModel.dll
