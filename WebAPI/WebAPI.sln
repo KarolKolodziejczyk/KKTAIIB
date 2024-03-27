@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33110.190
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI.csproj", "{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI.csproj", "{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotekaKlasModel", "..\BibliotekaKlasModel\BibliotekaKlasModel.csproj", "{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliotekaKlasModel", "..\BibliotekaKlasModel\BibliotekaKlasModel.csproj", "{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotekaKlasDAL", "..\BibliotekaKlasDAL\BibliotekaKlasDAL.csproj", "{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliotekaKlasDAL", "..\BibliotekaKlasDAL\BibliotekaKlasDAL.csproj", "{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "..\BLL\BLL.csproj", "{5203ED3C-C8D9-439B-94B6-A22051676C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_EF", "..\BLL_EF\BLL_EF.csproj", "{83B25A54-D898-4EA1-AA4E-8788B71B6380}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5203ED3C-C8D9-439B-94B6-A22051676C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5203ED3C-C8D9-439B-94B6-A22051676C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5203ED3C-C8D9-439B-94B6-A22051676C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5203ED3C-C8D9-439B-94B6-A22051676C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B25A54-D898-4EA1-AA4E-8788B71B6380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B25A54-D898-4EA1-AA4E-8788B71B6380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B25A54-D898-4EA1-AA4E-8788B71B6380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B25A54-D898-4EA1-AA4E-8788B71B6380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,6 @@ namespace BLL
 {
     public class OrderResponseDTO
     {
-        [Key]
         public int Id { get; set; }
 
         public int UserId { get; set; }

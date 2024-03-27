@@ -14,8 +14,8 @@ namespace BLL
         public string Password { get; set; }
         public BibliotekaKlasModel.Type Type { get; set; }
         public bool IsActive { get; set; }
-        public IEnumerable<OrderBLL> Zamowienia { get; set; }
-        public IEnumerable<BasketPostionBLL> Pozycje { get; set; }
+        public IEnumerable<OrderResponseDTO> Zamowienia { get; set; }
+        public IEnumerable<BasketPositionResponseDTO> Pozycje { get; set; }
 
     }
 }
