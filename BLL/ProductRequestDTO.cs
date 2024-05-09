@@ -10,5 +10,6 @@ namespace BLL
         public bool IsActive { get; set; }
         public IEnumerable<BasketPostionBLL> Pozycje { get; set; }
 
+
     }
 }

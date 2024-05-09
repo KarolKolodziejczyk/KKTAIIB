@@ -7,7 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using BibliotekaKlasModel;
+using System.Linq.Expressions;
 namespace BLL_EF
 {
     internal class Product : ProductBLL
@@ -42,7 +43,19 @@ namespace BLL_EF
 
         public IEnumerable<ProductResponseDTO> GetProducts()
         {
-            throw new NotImplementedException();
+            IEnumerable<BibliotekaKlasModel.Product> lista = _dbContext.Produkty.ToList();
+            List<ProductResponseDTO> lista2 = new List<ProductResponseDTO>();
+            foreach (var element in lista)
+            {
+                ProductResponseDTO a = new ProductResponseDTO();
+                a.Price = element.Price;
+                //a.Pozycje = element.Pozycje;
+                a.Image = element.Image;
+                a.Name = element.Name;
+                a.IsActive = element.IsActive;
+                lista2.Add(a);
+            }
+            return lista2;
         }
 
         public IEnumerable<ProductResponseDTO> GetProductsByActive(bool IsActive)

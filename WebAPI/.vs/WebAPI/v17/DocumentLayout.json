@@ -1,0 +1,792 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KKTaiib\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B25A54-D898-4EA1-AA4E-8788B71B6380}|..\\BLL_EF\\BLL_EF.csproj|d:\\kktaiib\\bll_ef\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B25A54-D898-4EA1-AA4E-8788B71B6380}|..\\BLL_EF\\BLL_EF.csproj|d:\\kktaiib\\bll_ef\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B25A54-D898-4EA1-AA4E-8788B71B6380}|..\\BLL_EF\\BLL_EF.csproj|d:\\kktaiib\\bll_ef\\bll_ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131635_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B25A54-D898-4EA1-AA4E-8788B71B6380}|..\\BLL_EF\\BLL_EF.csproj|d:\\kktaiib\\bll_ef\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\basketpostion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\orderposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|d:\\kktaiib\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB14B6B-606D-42B5-A4FF-DE0983AAEBD9}|WebAPI.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDBA7319-FBC8-4807-BE16-BE8D77470CB9}|..\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj|d:\\kktaiib\\bibliotekaklasdal\\webshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\basketpostionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\basketpositionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderpositionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderpositionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\orderpositionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\basketpositionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EFB2988-F2E8-4F06-ACA0-CA8B098D7D0E}|..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj|d:\\kktaiib\\bibliotekaklasmodel\\bibliotekaklasmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5203ED3C-C8D9-439B-94B6-A22051676C2E}|..\\BLL\\BLL.csproj|d:\\kktaiib\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131602_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131442_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130742_Init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130720_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130506_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313125216_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313125019_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313125019_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313124707_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313124707_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313124009_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313124009_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313123919_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313123919_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313123801_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313123801_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313123434_Init3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313123434_Init3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313123350_Init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313123350_Init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KKTaiib\\WebAPI\\Migrations\\20240313123249_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240313123249_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 219,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:33:46.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T07:51:37.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL_EF\\Order.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\Order.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL_EF\\Order.cs",
+              "RelativeToolTip": "..\\BLL_EF\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:27:05.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL_EF\\Product.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\Product.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL_EF\\Product.cs",
+              "RelativeToolTip": "..\\BLL_EF\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:27:53.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderBLL.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderBLL.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderBLL.cs",
+              "RelativeToolTip": "..\\BLL\\OrderBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:37:56.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductBLL.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\ProductBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\ProductBLL.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\ProductBLL.cs",
+              "RelativeToolTip": "..\\BLL\\ProductBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:38:35.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:53:28.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BasketPostion.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\BasketPostion.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\BasketPostion.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\BasketPostion.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\BasketPostion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:19:52.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Basket.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL_EF\\Basket.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\Basket.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL_EF\\Basket.cs",
+              "RelativeToolTip": "..\\BLL_EF\\Basket.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:20:33.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductResponseDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\ProductResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\ProductResponseDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\ProductResponseDTO.cs",
+              "RelativeToolTip": "..\\BLL\\ProductResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:08:38.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:23:15.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductRequestDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\ProductRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\ProductRequestDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\ProductRequestDTO.cs",
+              "RelativeToolTip": "..\\BLL\\ProductRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:33:28.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BLL_EF.csproj",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL_EF\\BLL_EF.csproj",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\BLL_EF.csproj",
+              "ToolTip": "D:\\KKTaiib\\BLL_EF\\BLL_EF.csproj",
+              "RelativeToolTip": "..\\BLL_EF\\BLL_EF.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-03T07:50:24.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderRequestDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderRequestDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderRequestDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:20:09.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\Product.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\Product.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\Product.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:42:19.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\Order.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\Order.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\Order.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\Order.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwBcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:42:33.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderPosition.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\OrderPosition.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\OrderPosition.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\OrderPosition.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\OrderPosition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:42:28.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WebAPI.csproj",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\WebAPI.csproj",
+              "RelativeDocumentMoniker": "WebAPI.csproj",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\WebAPI.csproj",
+              "RelativeToolTip": "WebAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T12:37:22.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserBLL.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\UserBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\UserBLL.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\UserBLL.cs",
+              "RelativeToolTip": "..\\BLL\\UserBLL.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:38:52.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserResponseDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\UserResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\UserResponseDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\UserResponseDTO.cs",
+              "RelativeToolTip": "..\\BLL\\UserResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:17:43.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRequestDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\UserRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\UserRequestDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\UserRequestDTO.cs",
+              "RelativeToolTip": "..\\BLL\\UserRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:33:59.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderResponseDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderResponseDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderResponseDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:33:21.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\User.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\User.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\User.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:42:09.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:57:27.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WebshopContext.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\WebshopContext.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\WebshopContext.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\WebshopContext.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\WebshopContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:13:32.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BasketPostionBLL.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\BasketPostionBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BasketPostionBLL.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\BasketPostionBLL.cs",
+              "RelativeToolTip": "..\\BLL\\BasketPostionBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:37:32.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BasketPositionResponseDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\BasketPositionResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BasketPositionResponseDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\BasketPositionResponseDTO.cs",
+              "RelativeToolTip": "..\\BLL\\BasketPositionResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:30:31.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderPositionBLL.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderPositionBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderPositionBLL.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderPositionBLL.cs",
+              "RelativeToolTip": "..\\BLL\\OrderPositionBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:38:17.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OrderPositionRequestDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderPositionRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderPositionRequestDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderPositionRequestDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderPositionRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:31:07.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderPositionResponseDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\OrderPositionResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderPositionResponseDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\OrderPositionResponseDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderPositionResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:22:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BasketPositionRequestDTO.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\BasketPositionRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BasketPositionRequestDTO.cs",
+              "ToolTip": "D:\\KKTaiib\\BLL\\BasketPositionRequestDTO.cs",
+              "RelativeToolTip": "..\\BLL\\BasketPositionRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:20:48.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BLL.csproj",
+              "DocumentMoniker": "D:\\KKTaiib\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL.csproj",
+              "ToolTip": "D:\\KKTaiib\\BLL\\BLL.csproj",
+              "RelativeToolTip": "..\\BLL\\BLL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-03T07:50:24.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BibliotekaKlasModel.csproj",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+              "RelativeToolTip": "..\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T12:37:22.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 67,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240313131635_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131635_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313131635_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131635_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313131635_Init.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:16:35.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240313131602_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131602_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313131602_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131602_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313131602_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:16:02.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240313131442_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131442_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313131442_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313131442_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313131442_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:14:42.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240313130742_Init2.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130742_Init2.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313130742_Init2.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130742_Init2.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313130742_Init2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:07:42.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20240313130720_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130720_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313130720_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130720_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313130720_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:07:20.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20240313130506_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130506_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313130506_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313130506_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313130506_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T13:05:06.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20240313125216_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313125216_Init.cs",
+              "RelativeDocumentMoniker": "..\\BibliotekaKlasDAL\\Migrations\\20240313125216_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\BibliotekaKlasDAL\\Migrations\\20240313125216_Init.cs",
+              "RelativeToolTip": "..\\BibliotekaKlasDAL\\Migrations\\20240313125216_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:52:16.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20240313125019_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313125019_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313125019_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313125019_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313125019_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:50:19.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20240313124707_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313124707_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313124707_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313124707_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313124707_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:47:07.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20240313124009_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313124009_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313124009_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313124009_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313124009_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:40:10.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20240313123919_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123919_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313123919_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123919_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313123919_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:39:19.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20240313123801_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123801_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313123801_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123801_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313123801_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:38:01.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20240313123434_Init3.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123434_Init3.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313123434_Init3.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123434_Init3.cs",
+              "RelativeToolTip": "Migrations\\20240313123434_Init3.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:34:34.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20240313123350_Init2.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123350_Init2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313123350_Init2.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123350_Init2.cs",
+              "RelativeToolTip": "Migrations\\20240313123350_Init2.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:33:50.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20240313123249_Init.cs",
+              "DocumentMoniker": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123249_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240313123249_Init.cs",
+              "ToolTip": "D:\\KKTaiib\\WebAPI\\Migrations\\20240313123249_Init.cs",
+              "RelativeToolTip": "Migrations\\20240313123249_Init.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:32:49.453Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

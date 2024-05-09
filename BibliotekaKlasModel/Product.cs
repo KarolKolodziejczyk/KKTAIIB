@@ -6,6 +6,17 @@ namespace BibliotekaKlasModel
 {
     public class Product : IEntityTypeConfiguration<Product>
     {
+        public Product(string name, decimal price, string image, bool active)
+        {
+            Name = name;
+            Price = price;
+            Image = image;
+        }
+
+        public Product()
+        {
+
+        }
         [Key]
         public int Id { get; set; }
         [MaxLength(50)]

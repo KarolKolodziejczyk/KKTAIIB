@@ -11621,6 +11621,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BLL >= 1.0.0",
       "BLL_EF >= 1.0.0",
       "BibliotekaKlasDAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.17",
@@ -11669,6 +11670,9 @@
             "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj": {
               "projectPath": "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj"
             },
+            "D:\\KKTaiib\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\KKTaiib\\BLL\\BLL.csproj"
+            },
             "D:\\KKTaiib\\BLL_EF\\BLL_EF.csproj": {
               "projectPath": "D:\\KKTaiib\\BLL_EF\\BLL_EF.csproj"
             }
@@ -11679,6 +11683,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11733,7 +11742,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

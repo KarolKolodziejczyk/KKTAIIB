@@ -11,9 +11,9 @@ D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
-D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.dll
 D:\KKTaiib\BLL\obj\Debug\net6.0\refint\BLL.dll
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.pdb
 D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.genruntimeconfig.cache
 D:\KKTaiib\BLL\obj\Debug\net6.0\ref\BLL.dll
+D:\KKTaiib\BLL\obj\Debug\net6.0\BLL.csproj.Up2Date
