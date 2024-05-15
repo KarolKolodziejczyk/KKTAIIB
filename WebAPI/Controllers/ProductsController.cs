@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using BLL_EF;
-using BLL;
-using BibliotekaKlasModel;
-namespace Products.Controllers
+﻿using BLL;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        readonly ProductBLL _service;
+        private readonly ProductBLL _service;
+
         public ProductsController(ProductBLL service)
         {
             _service = service;
@@ -17,25 +18,25 @@ namespace Products.Controllers
         [HttpGet]
         public IEnumerable<ProductResponseDTO> Get()
         {
-            return this._service.GetProducts();
+            return _service.GetProducts();
         }
 
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            this._service.DeleteProduct(id);
+            _service.DeleteProduct(id);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] ProductRequestDTO studentRequestDTO)
+        public void Put(int id, [FromBody] ProductRequestDTO productRequestDTO)
         {
-            //this._service.UpdateProduct(id, studentRequestDTO);
+            _service.UpdateProduct(productRequestDTO);
         }
 
         [HttpPost]
-        public void Post([FromBody] ProductRequestDTO studentRequestDTO)
+        public void Post([FromBody] ProductRequestDTO productRequestDTO)
         {
-            //this._service.PostStudent(studentRequestDTO);
+            _service.AddProduct(productRequestDTO);
         }
     }
 }

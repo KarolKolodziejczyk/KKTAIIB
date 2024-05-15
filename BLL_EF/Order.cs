@@ -2,51 +2,97 @@
 using BibliotekaKlasModel;
 using BLL;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL_EF
 {
-    internal class Order : OrderBLL
+    public class OrderService : OrderBLL
     {
-
         private readonly WebshopContext _dbContext;
-        public Order(WebshopContext context)
+
+        public OrderService(WebshopContext context)
         {
             _dbContext = context;
         }
 
-        private List<OrderResponseDTO> Orders = new List<OrderResponseDTO>(); 
         public IEnumerable<OrderResponseDTO> GetAllOrders()
         {
-              var allUsers = _dbContext.User.Include(u => u.Zamowienia)
-                 .ThenInclude(o => o.Pozycje).ToList();
-              List<BibliotekaKlasModel.Order> allOrders = allUsers.SelectMany(u => u.Zamowienia).ToList();
+            var allOrders = _dbContext.Zamowienia
+                                       .Include(o => o.Pozycje)
+                                       .ToList();
 
+            var orderResponseDTOs = allOrders.Select(order => new OrderResponseDTO
+            {
+                Id = order.Id,
+                UserId = order.UserId,
+                // Map other properties here
+            }).ToList();
 
-              return (IEnumerable < OrderResponseDTO > )allOrders;
-
+            return orderResponseDTOs;
         }
 
         public IEnumerable<OrderResponseDTO> GetOrderByUser(UserResponseDTO user)
         {
+            var userOrders = _dbContext.Zamowienia
+                                       .Include(o => o.Pozycje)
+                                       .Where(x => x.UserId == user.Id)
+                                       .ToList();
 
-            var us = _dbContext.User.FirstOrDefault(x => x.Id == user.Id);
-            List<BibliotekaKlasModel.Order> allOrders = us.Zamowienia.ToList();
-            
-            return (IEnumerable<OrderResponseDTO>)allOrders;
+            var orderResponseDTOs = userOrders.Select(order => new OrderResponseDTO
+            {
+                Id = order.Id,
+                UserId = order.UserId,
+                // Map other properties here
+            }).ToList();
+
+            return orderResponseDTOs;
         }
 
         public IEnumerable<OrderPositionResponseDTO> GetPositions(int id)
         {
-            var order = _dbContext.Zamowienia.FirstOrDefault(x => x.Id == id);
-            List<BibliotekaKlasModel.OrderPosition> pozycje = order.Pozycje.ToList();
+            var order = _dbContext.Zamowienia
+                                  .Include(o => o.Pozycje)
+                                  .FirstOrDefault(x => x.Id == id);
 
-            return (IEnumerable<OrderPositionResponseDTO>)pozycje;
+            if (order == null)
+            {
+                return Enumerable.Empty<OrderPositionResponseDTO>();
+            }
 
+            var orderPositionResponseDTOs = order.Pozycje.Select(pozycja => new OrderPositionResponseDTO
+            {
+                Id = pozycja.Id,
+                // Map other properties here
+            }).ToList();
+
+            return orderPositionResponseDTOs;
         }
+
+        OrderResponseDTO OrderBLL.GetOrderById(int id)
+        {
+            var order = _dbContext.Zamowienia
+                              .Include(o => o.Pozycje)
+                              .FirstOrDefault(x => x.Id == id);
+
+            if (order == null)
+            {
+                return null;
+            }
+
+            var orderResponseDTO = new OrderResponseDTO
+            {
+                Id = order.Id,
+                UserId = order.UserId,
+                // Map other properties here
+            };
+
+            return orderResponseDTO;
+        }
+
+
+
+        // Implement other methods from OrderBLL interface
+        // AddProductToOrder, RemoveProductFromOrder, CalculateOrderTotal, etc.
     }
 }

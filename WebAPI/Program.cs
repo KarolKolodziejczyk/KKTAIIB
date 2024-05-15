@@ -1,4 +1,7 @@
 using BibliotekaKlasDAL;
+using BibliotekaKlasModel;
+using BLL;
+using BLL_EF;
 
 namespace WebAPI
 {
@@ -10,13 +13,15 @@ namespace WebAPI
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<WebshopContext>();
 
+            builder.Services.AddScoped<OrderBLL, OrderService>(); 
+            builder.Services.AddScoped<BasketPostionBLL, Basket>();
+            builder.Services.AddScoped<ProductBLL, ProductService>();
+
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

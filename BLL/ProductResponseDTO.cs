@@ -9,7 +9,7 @@ namespace BLL
         public decimal Price { get; set; }
         public string Image { get; set; }
         public bool IsActive { get; set; }
-        public IEnumerable<BasketPostionBLL> Pozycje { get; set; }
+        public IEnumerable<BasketPositionResponseDTO> Pozycje { get; set; }
 
     }
 }

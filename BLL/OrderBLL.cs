@@ -15,6 +15,7 @@ namespace BibliotekaKlasModel
     {
         public IEnumerable<OrderResponseDTO> GetAllOrders();
         public IEnumerable<OrderResponseDTO> GetOrderByUser(UserResponseDTO user);
+        public OrderResponseDTO GetOrderById(int id);
         public IEnumerable<OrderPositionResponseDTO> GetPositions(int id);
     }
 }
