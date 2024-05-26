@@ -1,1 +1,17 @@
 <p>orders works!</p>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>OrderID</th>
+            <th>UserID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of data" (click)="toPage(order.id)">
+            <td >{{order.date}}</td>
+            <td>{{order.id}}</td>
+            <td>{{order.userID}}</td>
+        </tr>
+    </tbody>
+</table>

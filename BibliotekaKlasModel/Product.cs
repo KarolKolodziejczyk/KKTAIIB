@@ -22,7 +22,7 @@ namespace BibliotekaKlasModel
         [MaxLength(50)]
         public string Name { get; set; }
         public decimal Price { get; set; }
-        [MaxLength(50)]
+        [MaxLength(500)]
         public string  Image { get; set; }
         public bool IsActive { get; set; }
         public ICollection<BasketPostion> Pozycje { get; set; }

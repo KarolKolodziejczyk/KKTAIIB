@@ -1,1 +1,15 @@
-<p>products works!</p>
+<p>Produkty:</p>
+<div *ngFor="let p of data" class="grid-container" style="display:grid;">
+    <div class="grid-item" style="border: 1px solid black; background-color: darkkhaki; width: 15%; cursor: pointer;" [routerLink]="[p.id]">
+        {{ p.name }}
+        {{p.price}}<br/>
+        <img [src]=p.image width="100" height="100"><br/>
+        {{p.isActive}}<br/>
+        <input type="button" name="add" id="add" value="Add to basket" />
+    </div>
+</div>
+<br/><br/><br/>
+<form >
+    <input type="button" name="add" id="add" value="Add new product" />
+    
+</form>
