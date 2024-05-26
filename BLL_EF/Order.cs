@@ -43,7 +43,8 @@ namespace BLL_EF
             {
                 Id = order.Id,
                 UserId = order.UserId,
-                // Map other properties here
+                DateTime = order.DateTime,
+
             }).ToList();
 
             return orderResponseDTOs;
@@ -62,8 +63,8 @@ namespace BLL_EF
 
             var orderPositionResponseDTOs = order.Pozycje.Select(pozycja => new OrderPositionResponseDTO
             {
-                Id = pozycja.Id,
-                // Map other properties here
+                Id = order.Id,
+
             }).ToList();
 
             return orderPositionResponseDTOs;
@@ -84,15 +85,69 @@ namespace BLL_EF
             {
                 Id = order.Id,
                 UserId = order.UserId,
-                // Map other properties here
             };
 
             return orderResponseDTO;
         }
 
 
+        public void AddProductToOrder(int orderId, ProductResponseDTO product)
+        {
+            var order = _dbContext.Zamowienia
+                                  .Include(o => o.Pozycje)
+                                  .FirstOrDefault(x => x.Id == orderId);
 
-        // Implement other methods from OrderBLL interface
-        // AddProductToOrder, RemoveProductFromOrder, CalculateOrderTotal, etc.
+            if (order == null)
+            {
+                return; 
+            }
+
+            var newOrderPosition = new OrderPosition
+            {
+                OrderID = order.Id,
+            };
+
+            order.Pozycje.Add(newOrderPosition);
+
+            _dbContext.SaveChanges();
+        }
+
+
+        public void RemoveProductFromOrder(int orderId, int orderPositionId)
+        {
+            var order = _dbContext.Zamowienia
+                                  .Include(o => o.Pozycje)
+                                  .FirstOrDefault(x => x.Id == orderId);
+
+            if (order == null)
+            {
+                return;
+            }
+
+            var orderPositionToRemove = order.Pozycje.FirstOrDefault(p => p.Id == orderPositionId);
+
+            if (orderPositionToRemove == null)
+            {
+                return;
+            }
+
+            order.Pozycje.Remove(orderPositionToRemove);
+            _dbContext.SaveChanges();
+        }
+        public decimal CalculateOrderTotal(int orderId)
+        {
+            var order = _dbContext.Zamowienia
+                                  .Include(o => o.Pozycje)
+                                  .FirstOrDefault(x => x.Id == orderId);
+
+            if (order == null)
+            {
+                return (decimal)0.0;
+            }
+
+            decimal total = order.Pozycje.Sum(p => p.Price * p.Amout);
+
+            return total;
+        }
     }
 }

@@ -45,5 +45,8 @@ export class OrdersComponent {
         this.isAllOrdersPage = current === 'orders/all';
       });
     }
-
+      public toPage(orderId: number){
+        if(this.isAllOrdersPage) this.router.navigate(['/orders/all/', orderId]);
+        else this.router.navigate(['/orders/', orderId]);
+      }
   }
