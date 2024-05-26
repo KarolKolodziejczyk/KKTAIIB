@@ -5,49 +5,68 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace BLL_EF
 {
     public class Basket : BasketPostionBLL
     {
-
         private readonly WebshopContext _dbContext;
+
         public Basket(WebshopContext context)
         {
             _dbContext = context;
         }
 
-        public void AddToBasket(ProductResponseDTO a)
+        public void AddToBasket(ProductResponseDTO product)
         {
+            var basketPosition = new BasketPostion
+            {
+                ProductID = product.Id,
+                // Ustaw inne właściwości BasketPosition
+            };
 
-            //var a = new BasketPosition()
-            //_dbContext.BasketPostion
-            throw new NotImplementedException();
-
+            _dbContext.BasketPostion.Add(basketPosition);
+            _dbContext.SaveChanges();
         }
 
-        public void ChangeAmount(ProductResponseDTO a, int amount)
+        public void ChangeAmount(ProductResponseDTO product, int amount)
         {
-            //var a = _dbContext.
-            throw new NotImplementedException();
+            var basketPosition = _dbContext.BasketPostion.FirstOrDefault(bp => bp.ProductID == product.Id);
+            if (basketPosition != null)
+            {
+                basketPosition.Amount = amount;
+                _dbContext.SaveChanges();
+            }
         }
 
         public void ChangeAmount(int id, int amount)
         {
-            throw new NotImplementedException();
+            var basketPosition = _dbContext.BasketPostion.FirstOrDefault(bp => bp.ProductID == id);
+            if (basketPosition != null)
+            {
+                basketPosition.Amount = amount;
+                _dbContext.SaveChanges();
+            }
         }
 
-        public void DeleteFromBasket(ProductResponseDTO a)
+        public void DeleteFromBasket(ProductResponseDTO product)
         {
-            var u = _dbContext.BasketPostion.FirstOrDefault(x => x.ProductID == a.Id);
-            _dbContext.BasketPostion.Remove(u);
+            var basketPosition = _dbContext.BasketPostion.FirstOrDefault(bp => bp.ProductID == product.Id);
+            if (basketPosition != null)
+            {
+                _dbContext.BasketPostion.Remove(basketPosition);
+                _dbContext.SaveChanges();
+            }
         }
 
         public void DeleteFromBasket(int id)
         {
-            var u = _dbContext.BasketPostion.FirstOrDefault(x => x.ProductID == id);
-            _dbContext.BasketPostion.Remove(u);
+            var basketPosition = _dbContext.BasketPostion.FirstOrDefault(bp => bp.ProductID == id);
+            if (basketPosition != null)
+            {
+                _dbContext.BasketPostion.Remove(basketPosition);
+                _dbContext.SaveChanges();
+            }
         }
 
         public IEnumerable<BasketPositionResponseDTO> GetBasket(UserResponseDTO user)
@@ -57,19 +76,15 @@ namespace BLL_EF
                 return Enumerable.Empty<BasketPositionResponseDTO>();
             }
 
-            var u = user.Pozycje.ToList();
-            return u.Select(p => new BasketPositionResponseDTO
+            return user.Pozycje.Select(p => new BasketPositionResponseDTO
             {
                 // mapowanie właściwości z pozycji koszyka do BasketPositionResponseDTO
-                
             }).ToList();
         }
-
 
         public OrderRequestDTO Order(UserResponseDTO user)
         {
             throw new NotImplementedException();
-
         }
     }
 }
