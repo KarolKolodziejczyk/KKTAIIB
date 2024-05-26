@@ -25,7 +25,7 @@ namespace BibliotekaKlasModel
         [MaxLength(50)]
         public string  Image { get; set; }
         public bool IsActive { get; set; }
-        public IEnumerable<BasketPostion> Pozycje { get; set; }
+        public ICollection<BasketPostion> Pozycje { get; set; }
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder

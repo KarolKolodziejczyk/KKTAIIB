@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj": {}
+    "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj": {}
   },
   "projects": {
-    "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj": {
+    "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj",
+        "projectUniqueName": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj",
         "projectName": "BibliotekaKlasDAL",
-        "projectPath": "D:\\KKTaiib\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "D:\\KKTaiib\\BibliotekaKlasDAL\\obj\\",
+        "projectPath": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasDAL\\BibliotekaKlasDAL.csproj",
+        "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
+        "outputPath": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasDAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj": {
-                "projectPath": "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj"
+              "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj": {
+                "projectPath": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj"
               }
             }
           }
@@ -44,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,8 +71,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,26 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj": {
+    "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+        "projectUniqueName": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
         "projectName": "BibliotekaKlasModel",
-        "projectPath": "D:\\KKTaiib\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "D:\\KKTaiib\\BibliotekaKlasModel\\obj\\",
+        "projectPath": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\BibliotekaKlasModel.csproj",
+        "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
+        "outputPath": "G:\\MOJEDOKUMENTY\\PRIRSpeed\\KKTAIIB\\BibliotekaKlasModel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -119,7 +102,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -132,11 +114,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -170,8 +147,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -180,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -52,11 +52,19 @@ namespace BLL_EF
 
         public IEnumerable<BasketPositionResponseDTO> GetBasket(UserResponseDTO user)
         {
-            //var u = _dbContext.BasketPostion.FirstOrDefault(x => x.UserID == user.Id);
-            // IEnumerable < BasketPostion > a = 
+            if (user.Pozycje == null)
+            {
+                return Enumerable.Empty<BasketPositionResponseDTO>();
+            }
+
             var u = user.Pozycje.ToList();
-            return (IEnumerable<BasketPositionResponseDTO>)u;
+            return u.Select(p => new BasketPositionResponseDTO
+            {
+                // mapowanie właściwości z pozycji koszyka do BasketPositionResponseDTO
+                
+            }).ToList();
         }
+
 
         public OrderRequestDTO Order(UserResponseDTO user)
         {

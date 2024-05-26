@@ -21,7 +21,7 @@ namespace BibliotekaKlasModel
         public DateTime DateTime { get; set; }
 
         [Required]
-        public IEnumerable<OrderPosition> Pozycje { get; set; }
+        public ICollection<OrderPosition> Pozycje { get; set; }
 
         public void Configure(EntityTypeBuilder<Order> builder)
         {

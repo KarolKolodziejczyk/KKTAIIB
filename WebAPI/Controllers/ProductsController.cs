@@ -1,6 +1,8 @@
-﻿using BLL;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using WebAPI;
+using BLL;
+using BLL_EF;
 
 namespace WebAPI.Controllers
 {
@@ -8,35 +10,38 @@ namespace WebAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly ProductBLL _service;
+        private readonly ProductService _productService;
 
-        public ProductsController(ProductBLL service)
+        public ProductsController(ProductService productService)
         {
-            _service = service;
+            _productService = productService;
         }
 
         [HttpGet]
         public IEnumerable<ProductResponseDTO> Get()
         {
-            return _service.GetProducts();
+            return _productService.GetProducts();
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            _service.DeleteProduct(id);
+            _productService.DeleteProduct(id);
+            return Ok();
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] ProductRequestDTO productRequestDTO)
+        public IActionResult Put(int id, [FromBody] ProductRequestDTO productRequestDTO)
         {
-            _service.UpdateProduct(productRequestDTO);
+            _productService.UpdateProduct(id, productRequestDTO.Name, productRequestDTO.Price, productRequestDTO.Image, false);
+            return Ok();
         }
 
         [HttpPost]
-        public void Post([FromBody] ProductRequestDTO productRequestDTO)
+        public IActionResult Post([FromBody] ProductRequestDTO productRequestDTO)
         {
-            _service.AddProduct(productRequestDTO);
+            _productService.AddProduct(productRequestDTO);
+            return Ok();
         }
     }
 }

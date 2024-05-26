@@ -15,7 +15,7 @@ namespace WebAPI
 
             builder.Services.AddScoped<OrderBLL, OrderService>(); 
             builder.Services.AddScoped<BasketPostionBLL, Basket>();
-            builder.Services.AddScoped<ProductBLL, ProductService>();
+            builder.Services.AddScoped<ProductService>();
 
             // Add services to the container.
 

@@ -2,9 +2,9 @@
 using BibliotekaKlasModel;
 using BLL;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using BibliotekaKlasModel;
 
 namespace BLL_EF
 {
@@ -27,32 +27,47 @@ namespace BLL_EF
             }
         }
 
-        public void AddProduct(string Name, decimal Price, string Image, bool Active = false)
+        public void AddProduct(string name, decimal price, string image, bool active = false)
         {
-            var product = new BibliotekaKlasModel.Product
+            var product = new Product
             {
-                Name = Name,
-                Price = Price,
-                Image = Image,
-                IsActive = Active
+                Name = name,
+                Price = price,
+                Image = image,
+                IsActive = active
             };
             _dbContext.Produkty.Add(product);
             _dbContext.SaveChanges();
         }
 
-        public void AddProduct(ProductRequestDTO a)
+        public void AddProduct(ProductRequestDTO productRequest)
         {
-            var product = new BibliotekaKlasModel.Product
+            var product = new Product
             {
-                Name = a.Name,
-                Price = a.Price,
-                Image = a.Image,
-                IsActive = a.IsActive
+                Name = productRequest.Name,
+                Price = productRequest.Price,
+                Image = productRequest.Image,
+                IsActive = productRequest.IsActive
             };
+
+            if (productRequest.Pozycje != null && productRequest.Pozycje.Any())
+            {
+                // Jeśli istnieją pozycje, przypisz je do produktu
+                foreach (var pozycja in productRequest.Pozycje)
+                {
+                    product.Pozycje.Add(new BasketPostion
+                    {
+                        // Przypisz właściwości z DTO do pozycji koszyka
+                        ProductID = pozycja.ProductID,
+                        UserID = pozycja.UserID,
+                        Amount = pozycja.Amount
+                    });
+                }
+            }
+
             _dbContext.Produkty.Add(product);
             _dbContext.SaveChanges();
         }
-
         public void DeleteProduct(int id)
         {
             var product = _dbContext.Produkty.Find(id);
@@ -103,10 +118,10 @@ namespace BLL_EF
                 }).ToList();
         }
 
-        public IEnumerable<ProductResponseDTO> GetProductsPaged(int size, int count)
+        public IEnumerable<ProductResponseDTO> GetProductsPaged(int size, int page)
         {
             return _dbContext.Produkty
-                .Skip((count - 1) * size)
+                .Skip((page - 1) * size)
                 .Take(size)
                 .Select(product => new ProductResponseDTO
                 {
@@ -120,18 +135,17 @@ namespace BLL_EF
 
         public IEnumerable<ProductResponseDTO> GetProductsSort(string columnName, bool ascending = true)
         {
-            IQueryable<BibliotekaKlasModel.Product> products = _dbContext.Produkty;
+            IQueryable<Product> products = _dbContext.Produkty;
 
             switch (columnName)
             {
-                case nameof(BibliotekaKlasModel.Product.Name):
+                case nameof(Product.Name):
                     products = ascending ? products.OrderBy(p => p.Name) : products.OrderByDescending(p => p.Name);
                     break;
-                case nameof(BibliotekaKlasModel.Product.Price):
+                case nameof(Product.Price):
                     products = ascending ? products.OrderBy(p => p.Price) : products.OrderByDescending(p => p.Price);
                     break;
                 default:
-                    // Domyślne sortowanie
                     products = products.OrderBy(p => p.Id);
                     break;
             }
@@ -159,15 +173,15 @@ namespace BLL_EF
             }
         }
 
-        public void UpdateProduct(ProductRequestDTO a)
+        public void UpdateProduct(ProductRequestDTO productRequest)
         {
-            var product = _dbContext.Produkty.Find(a);
+            var product = _dbContext.Produkty.Find(productRequest);
             if (product != null)
             {
-                product.Name = a.Name;
-                product.Price = a.Price;
-                product.Image = a.Image;
-                product.IsActive = a.IsActive;
+                product.Name = productRequest.Name;
+                product.Price = productRequest.Price;
+                product.Image = productRequest.Image;
+                product.IsActive = productRequest.IsActive;
                 _dbContext.SaveChanges();
             }
         }

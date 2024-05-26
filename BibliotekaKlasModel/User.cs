@@ -20,8 +20,8 @@ namespace BibliotekaKlasModel
         public Type Type { get; set; }  
         public bool IsActive { get; set; }
 
-        public IEnumerable<Order> Zamowienia { get; set; }
-        public IEnumerable<BasketPostion> Pozycje { get; set; }
+        public ICollection<Order> Zamowienia { get; set; }
+        public ICollection<BasketPostion> Pozycje { get; set; }
 
         public void Configure(EntityTypeBuilder<User> builder)
         {

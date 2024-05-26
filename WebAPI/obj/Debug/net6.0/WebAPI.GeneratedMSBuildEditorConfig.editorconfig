@@ -5,39 +5,36 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAPI
 build_property.RootNamespace = WebAPI
-build_property.ProjectDir = D:\KKTaiib\WebAPI\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\WebAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\KKTaiib\WebAPI
+build_property.MSBuildProjectDirectory = G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\WebAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/KKTaiib/WebAPI/Views/Orders/Create.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KKTaiib/WebAPI/Views/Orders/Delete.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KKTaiib/WebAPI/Views/Orders/Details.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KKTaiib/WebAPI/Views/Orders/Edit.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KKTaiib/WebAPI/Views/Orders/Index.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KKTaiib/WebAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/MOJEDOKUMENTY/PRIRSpeed/KKTAIIB/WebAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
