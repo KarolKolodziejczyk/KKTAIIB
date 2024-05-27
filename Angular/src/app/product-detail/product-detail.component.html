@@ -1,10 +1,14 @@
 <p>product-detail works!</p>
-<div *ngIf="product" class="grid-container" style="display:grid;">
-    <div class="grid-item" style="border: 1px solid black; background-color: lightblue; width: 10%;">
-        {{ product.name }}
-        {{product.price}}<br/>
-        <img [src]=product.image width="100" height="100"><br/>
-        {{product.isActive}}<br/>
+<div *ngIf="product" class="container">
+    <div class="grid-item">
+        <div>
+            {{ product.name }}
+            {{product.price}}<br/>
+            <div class="image-container">
+                <img [src]=product.image width="100" height="100">
+            </div>
+            {{product.isActive}}<br/>
+        </div>
     </div>
 </div>
 <form *ngIf="product" #productForm="ngForm" (ngSubmit)="onSubmit($event)">
@@ -61,7 +65,7 @@
             required
             >
     </div>
-    <input type="button" name="cancel" id="cancel" value="Anuluj" (click)="cancel()"/>
+    <input type="button" name="cancel" id="cancel" value="Cancel" (click)="cancel()"/>
     <input 
     type="submit" 
     name="save" 
