@@ -1,6 +1,6 @@
 <p>Produkty:</p>
 <div style="display: flex; flex-wrap: wrap;">
-    <span *ngFor="let p of data" class="grid-item" style="border: 1px solid grey; background-color: lightblue; width: 15%; margin: 5px; padding: 10px; cursor: pointer;" [routerLink]="[p.id]">
+    <span *ngFor="let p of data" class="grid-item" style="border: 1px solid g; background-color: lightblue; width: 15%; margin: 5px; padding: 10px; cursor: pointer;" [routerLink]="['/Products', p.id]">
         <div style="text-align: center;">
             {{ p.name }}
             {{ p.price }}<br/>

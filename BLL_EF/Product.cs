@@ -118,7 +118,6 @@ namespace BLL_EF
                     IsActive = product.IsActive
                 }).ToList();
         }
-        [HttpGet("paged")]
         public ICollection<ProductResponseDTO> GetProductsPaged(int size, int page)
         {
             return _dbContext.Produkty

@@ -69,6 +69,19 @@ namespace WebAPI.Controllers
             return Ok();
         }
 
+        [HttpPut("active/{id}")]
+        public IActionResult ActivateProduct(int id, [FromBody] ProductRequestDTO productRequestDTO)
+        {
+            _productService.UpdateProduct(id, productRequestDTO.Name, productRequestDTO.Price, productRequestDTO.Image, true);
+            return Ok();
+        }
+        [HttpPut("deactive/{id}")]
+        public IActionResult DeactiveProduct(int id, [FromBody] ProductRequestDTO productRequestDTO)
+        {
+            _productService.UpdateProduct(id, productRequestDTO.Name, productRequestDTO.Price, productRequestDTO.Image, false);
+            return Ok();
+        }
+
         [HttpPost]
         public IActionResult Post([FromBody] ProductRequestDTO productRequestDTO)
         {

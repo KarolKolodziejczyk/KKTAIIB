@@ -7,14 +7,18 @@ import { ProductDTO } from './models/product.interface';
   providedIn: 'root'
 })
 export class ProductsService {
-  changeActiveState(stan: boolean) {
-    return this.httpClient.get<ProductDTO[]>('https://localhost:7016/api/Products/active?isActive=${stan}');
+  changeActiveState(id: number, stan:boolean) {
+    if(stan)
+      return this.httpClient.get<ProductDTO[]>(`https://localhost:7016/api/Products/active/${id}`);
+    else
+     return this.httpClient.get<ProductDTO[]>(`https://localhost:7016/api/Products/deactive/${id}`);
+
   }
   delete(id: number) {
     return false;
   }
   getProductById(id: number) {
-    return this.httpClient.get<ProductDTO[]>('https://localhost:7016/api/Products/${id}');
+    return this.httpClient.get<ProductDTO>(`https://localhost:7016/api/Products/${id}`);
   }
 
   constructor(private httpClient: HttpClient) { }

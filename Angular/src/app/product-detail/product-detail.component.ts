@@ -20,20 +20,26 @@ export class ProductDetailComponent {
   };
 
   constructor(private route: ActivatedRoute, private productService: ProductsService, private router: Router ) {
-    const id = route.snapshot.paramMap.get('id');
-    if (id !== null) {
-      productService.getProductById(parseInt(id)).subscribe({
-        next: (product) => {
-          this.product = product;
-          this.productRequest = product;
-        },
-        error: (err) => console.error(err)
-      });
-    }
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      console.log('Product ID:', id); // Dodaj to logowanie
+      if (id !== null) {
+        this.productService.getProductById(parseInt(id)).subscribe({
+          next: (product) => {
+            this.product = product;
+            this.productRequest = product;
+          },
+          error: (err) => console.error(err)
+        });
+      }
+    });
   }
-  /*
+  
+  
+
+  
  public onSubmit(event: any): void {
-    if (this.product != undefined) {
+    /*if (this.product != undefined) {
       if (event.submitter && event.submitter.name === 'delete') {
         this.productService.delete(this.product.id).subscribe({
           next: () => {
@@ -63,10 +69,11 @@ export class ProductDetailComponent {
         })
       }
     }
+    */
   }
-*/
+
   public cancel(): void{
-    this.productService.changeActiveState(this.product.id).subscribe({
+    this.productService.changeActiveState(this.product.id, false).subscribe({
       next: () => {
         this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>{
           this.router.navigate([`/products/${this.product.id}`]);
