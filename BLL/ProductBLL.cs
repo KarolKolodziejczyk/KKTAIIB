@@ -6,11 +6,11 @@ namespace BLL
 {
     public interface ProductBLL 
     {
-        public IEnumerable<ProductResponseDTO> GetProducts();
-        public IEnumerable<ProductResponseDTO> GetProductsPaged(int size, int count);
-        public IEnumerable<ProductResponseDTO> GetProductsByName(string name);
-        public IEnumerable<ProductResponseDTO> GetProductsByActive(bool IsActive);
-        public IEnumerable<ProductResponseDTO> GetProductsSort( string nazwaKolumny, bool Ascending =true);
+        public ICollection<ProductResponseDTO> GetProducts();
+        public ICollection<ProductResponseDTO> GetProductsPaged(int size, int count);
+        public ICollection<ProductResponseDTO> GetProductsByName(string name);
+        public ICollection<ProductResponseDTO> GetProductsByActive(bool IsActive);
+        public ICollection<ProductResponseDTO> GetProductsSort( string nazwaKolumny, bool Ascending =true);
         public void AddProduct(string Name, decimal Price, string Image, bool Active = false);
         public void AddProduct(ProductRequestDTO a);
 

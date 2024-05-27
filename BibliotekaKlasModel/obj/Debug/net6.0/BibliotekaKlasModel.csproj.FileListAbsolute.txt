@@ -26,3 +26,17 @@ G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\refint\B
 G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.pdb
 G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.genruntimeconfig.cache
 G:\MOJEDOKUMENTY\PRIRSpeed\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\ref\BibliotekaKlasModel.dll
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.deps.json
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.runtimeconfig.json
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.dll
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\bin\Debug\net6.0\BibliotekaKlasModel.pdb
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.AssemblyInfo.cs
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.dll
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\refint\BibliotekaKlasModel.dll
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.pdb
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\BibliotekaKlasModel.genruntimeconfig.cache
+C:\Users\student\Desktop\dkt2\KKTAIIB\BibliotekaKlasModel\obj\Debug\net6.0\ref\BibliotekaKlasModel.dll

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using BibliotekaKlasModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BLL_EF
 {
@@ -78,7 +79,7 @@ namespace BLL_EF
             }
         }
 
-        public IEnumerable<ProductResponseDTO> GetProducts()
+        public ICollection<ProductResponseDTO> GetProducts()
         {
             return _dbContext.Produkty.Select(product => new ProductResponseDTO
             {
@@ -90,7 +91,7 @@ namespace BLL_EF
             }).ToList();
         }
 
-        public IEnumerable<ProductResponseDTO> GetProductsByActive(bool isActive)
+        public ICollection<ProductResponseDTO> GetProductsByActive(bool isActive)
         {
             return _dbContext.Produkty
                 .Where(p => p.IsActive == isActive)
@@ -104,7 +105,7 @@ namespace BLL_EF
                 }).ToList();
         }
 
-        public IEnumerable<ProductResponseDTO> GetProductsByName(string name)
+        public ICollection<ProductResponseDTO> GetProductsByName(string name)
         {
             return _dbContext.Produkty
                 .Where(p => p.Name.Contains(name))
@@ -117,8 +118,8 @@ namespace BLL_EF
                     IsActive = product.IsActive
                 }).ToList();
         }
-
-        public IEnumerable<ProductResponseDTO> GetProductsPaged(int size, int page)
+        [HttpGet("paged")]
+        public ICollection<ProductResponseDTO> GetProductsPaged(int size, int page)
         {
             return _dbContext.Produkty
                 .Skip((page - 1) * size)
@@ -133,7 +134,7 @@ namespace BLL_EF
                 }).ToList();
         }
 
-        public IEnumerable<ProductResponseDTO> GetProductsSort(string columnName, bool ascending = true)
+        public ICollection<ProductResponseDTO> GetProductsSort(string columnName, bool ascending = true)
         {
             IQueryable<Product> products = _dbContext.Produkty;
 

@@ -11,7 +11,7 @@ export class OrdersService {
   constructor(private httpClient: HttpClient) { }
 
   public getUserOrders(id: number): Observable<OrderDTO[]> {
-    return this.httpClient.get<OrderDTO[]>(`https://localhost:7016/api/Orders/${id}`);
+    return this.httpClient.get<OrderDTO[]>(`https://localhost:7016/api/Orders/user/${id}`);
   }
 
   public getAllOrders(id: number): Observable<OrderDTO[]> {

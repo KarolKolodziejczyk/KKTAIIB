@@ -1,6 +1,8 @@
 ﻿using BLL;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using BibliotekaKlasModel;
+using BLL_EF;
 
 namespace WebAPI.Controllers
 {
@@ -8,13 +10,16 @@ namespace WebAPI.Controllers
     [ApiController]
     public class BasketController : ControllerBase
     {
-        private readonly BasketPostionBLL _service;
+        private readonly Basket _service;
 
-        public BasketController(BasketPostionBLL service)
+        public BasketController(Basket service)
         {
             _service = service;
         }
 
+        /// <summary>
+        /// Dodaje produkt do koszyka.
+        /// </summary>
         [HttpPost]
         public IActionResult AddToBasket([FromBody] ProductResponseDTO product)
         {
@@ -22,13 +27,19 @@ namespace WebAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Zmienia ilość produktu w koszyku.
+        /// </summary>
         [HttpPut("{id}")]
-        public IActionResult ChangeAmount(int id, int amount)
+        public IActionResult ChangeAmount(int id, [FromBody] int amount)
         {
             _service.ChangeAmount(id, amount);
             return Ok();
         }
 
+        /// <summary>
+        /// Usuwa produkt z koszyka.
+        /// </summary>
         [HttpDelete("{id}")]
         public IActionResult DeleteFromBasket(int id)
         {
@@ -36,6 +47,9 @@ namespace WebAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Pobiera koszyk dla określonego użytkownika.
+        /// </summary>
         [HttpGet("{userId}")]
         public IActionResult GetBasket(int userId)
         {
@@ -44,6 +58,9 @@ namespace WebAPI.Controllers
             return Ok(basket);
         }
 
+        /// <summary>
+        /// Tworzy zamówienie na podstawie koszyka użytkownika.
+        /// </summary>
         [HttpPost("{userId}/order")]
         public IActionResult Order(int userId)
         {

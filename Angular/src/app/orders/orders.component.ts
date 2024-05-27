@@ -10,7 +10,7 @@ import { OrdersService } from '../orders.service';
 })
 export class OrdersComponent {
     public data: OrderDTO[] = [];
-    public id: number = 1;
+    public id: number = 2;
     public isAllOrdersPage: boolean = false;
     public choosedOrder?: OrderDTO = undefined;
 
@@ -18,6 +18,7 @@ export class OrdersComponent {
       this.checkPage();
       this.getData();
     }
+
     private getData(): void {
       if (!this.isAllOrdersPage) {
         this.ordersService.getUserOrders(this.id).subscribe({
@@ -42,11 +43,11 @@ export class OrdersComponent {
     private checkPage(): void {
       this.route.url.subscribe(urlSegments => {
         const current = urlSegments.map(segment => segment.path).join('/');
-        this.isAllOrdersPage = current === 'orders/all';
+        this.isAllOrdersPage = current === 'Orders/All';
       });
     }
       public toPage(orderId: number){
         if(this.isAllOrdersPage) this.router.navigate(['/orders/all/', orderId]);
-        else this.router.navigate(['/orders/', orderId]);
+        else this.router.navigate(['/Orders/user/', orderId]);
       }
   }

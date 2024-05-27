@@ -7,11 +7,11 @@ using System.Linq;
 
 namespace BLL_EF
 {
-    public class OrderService : OrderBLL
+    public class OrderS : OrderBLL
     {
         private readonly WebshopContext _dbContext;
 
-        public OrderService(WebshopContext context)
+        public OrderS(WebshopContext context)
         {
             _dbContext = context;
         }
@@ -44,7 +44,7 @@ namespace BLL_EF
                 Id = order.Id,
                 UserId = order.UserId,
                 DateTime = order.DateTime,
-
+                // Map other properties here
             }).ToList();
 
             return orderResponseDTOs;
@@ -63,18 +63,19 @@ namespace BLL_EF
 
             var orderPositionResponseDTOs = order.Pozycje.Select(pozycja => new OrderPositionResponseDTO
             {
-                Id = order.Id,
-
+                Id = pozycja.Id,
+         
+                // Map other properties here
             }).ToList();
 
             return orderPositionResponseDTOs;
         }
 
-        OrderResponseDTO OrderBLL.GetOrderById(int id)
+        public OrderResponseDTO GetOrderById(int id)
         {
             var order = _dbContext.Zamowienia
-                              .Include(o => o.Pozycje)
-                              .FirstOrDefault(x => x.Id == id);
+                                  .Include(o => o.Pozycje)
+                                  .FirstOrDefault(x => x.Id == id);
 
             if (order == null)
             {
@@ -85,11 +86,60 @@ namespace BLL_EF
             {
                 Id = order.Id,
                 UserId = order.UserId,
+                DateTime = order.DateTime,
+                // Map other properties here
             };
 
             return orderResponseDTO;
         }
 
+        public void AddOrder(OrderRequestDTO orderRequestDTO)
+        {
+            var order = new Order
+            {
+                UserId = orderRequestDTO.UserId,
+                DateTime = orderRequestDTO.DateTime,
+                // Map other properties here
+            };
+
+            if (orderRequestDTO.Pozycje != null && orderRequestDTO.Pozycje.Any())
+            {
+                foreach (var pozycja in orderRequestDTO.Pozycje)
+                {
+                    order.Pozycje.Add(new OrderPosition
+                    {
+                      
+                        // Map other properties here
+                    });
+                }
+            }
+
+            _dbContext.Zamowienia.Add(order);
+            _dbContext.SaveChanges();
+        }
+
+        public void UpdateOrder(int id, OrderRequestDTO orderRequestDTO)
+        {
+            var order = _dbContext.Zamowienia.Find(id);
+            if (order != null)
+            {
+                order.UserId = orderRequestDTO.UserId;
+                order.DateTime = orderRequestDTO.DateTime;
+                // Update other properties here
+
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void DeleteOrder(int id)
+        {
+            var order = _dbContext.Zamowienia.Find(id);
+            if (order != null)
+            {
+                _dbContext.Zamowienia.Remove(order);
+                _dbContext.SaveChanges();
+            }
+        }
 
         public void AddProductToOrder(int orderId, ProductResponseDTO product)
         {
@@ -99,19 +149,20 @@ namespace BLL_EF
 
             if (order == null)
             {
-                return; 
+                return;
             }
 
             var newOrderPosition = new OrderPosition
             {
                 OrderID = order.Id,
+                ProductID = product.Id,
+                Amout = 1 // Adjust quantity as needed
+                // Map other properties here
             };
 
             order.Pozycje.Add(newOrderPosition);
-
             _dbContext.SaveChanges();
         }
-
 
         public void RemoveProductFromOrder(int orderId, int orderPositionId)
         {
@@ -134,6 +185,7 @@ namespace BLL_EF
             order.Pozycje.Remove(orderPositionToRemove);
             _dbContext.SaveChanges();
         }
+
         public decimal CalculateOrderTotal(int orderId)
         {
             var order = _dbContext.Zamowienia
@@ -142,11 +194,10 @@ namespace BLL_EF
 
             if (order == null)
             {
-                return (decimal)0.0;
+                return 0.0m;
             }
 
             decimal total = order.Pozycje.Sum(p => p.Price * p.Amout);
-
             return total;
         }
     }

@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent {
   public data: ProductDTO[] = [];
-  public page: number = 0;
-  public count: number = 10;
+  public page: number = 1;
+  public count: number = 5;
   constructor(private productsService: ProductsService, private router: Router) {
     this.getData();
   }
